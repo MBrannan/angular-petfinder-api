@@ -2,3 +2,14 @@ h2 {
   text-align: center;
   color: crimson;
 }
+
+.jumbotron {
+  text-align: center;
+  background-color: forestgreen;
+  color: beige;
+}
+
+.nav {
+  background-color: beige;
+  border: 2px dotted black;
+}
