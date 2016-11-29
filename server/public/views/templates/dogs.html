@@ -1,0 +1,18 @@
+<table class="table">
+  <tr><td>Age:</td><td>{{dogs.animal.age.$t}}</td></tr>
+  <tr><td>Description:</td><td>{{dogs.animal.description.$t}}</td></tr>
+  <tr><td>Breed(Purebreds Only)</td><td>{{dogs.animal.breeds.breed.$t}}</td></tr>
+  <tr><td>First Breed(Non-Purebreds)</td><td>{{dogs.animal.breeds.breed[0].$t}}</td></tr>
+  <tr><td>Second Breed(Non-Purebreds)</td><td>{{dogs.animal.breeds.breed[1].$t}}</td></tr>
+  <tr><td>Name</td><td>{{dogs.animal.name.$t}}</td></tr>
+  <tr><td>Sex</td><td>{{dogs.animal.sex.$t}}</td></tr>
+  <tr><td>Size</td><td>{{dogs.animal.size.$t}}</td></tr>
+  <tr><td>Status</td><td>{{dogs.animal.status.$t}}</td></tr>
+</table>
+
+<div class="container">
+  <div class="">
+    {{dogs.animal.contact.phone.$t}}
+  </div>
+  <img ng-src="{{dogs.animal.media.photos.photo[2].$t}}"/>
+</div>

@@ -1,0 +1,16 @@
+<table class="table">
+  <tr><td>Age:</td><td>{{cats.animal.age.$t}}</td></tr>
+  <tr><td>Description:</td><td>{{cats.animal.description.$t}}</td></tr>
+  <tr><td>Breeds</td><td>{{cats.animal.breeds.breed.$t}}</td></tr>
+  <tr><td>Name</td><td>{{cats.animal.name.$t}}</td></tr>
+  <tr><td>Sex</td><td>{{cats.animal.sex.$t}}</td></tr>
+  <tr><td>Size</td><td>{{cats.animal.size.$t}}</td></tr>
+  <tr><td>Status</td><td>{{cats.animal.status.$t}}</td></tr>
+</table>
+
+<div class="container">
+  <div class="">
+    {{cats.animal.contact.phone.$t}}
+  </div>
+  <img ng-src="{{cats.animal.media.photos.photo[2].$t}}" />
+</div>

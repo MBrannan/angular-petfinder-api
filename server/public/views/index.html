@@ -2,20 +2,23 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <script type="text/javascript" src="vendor/angular.min.js"></script>
-    <script type="text/javascript" src="scripts/client.js"></script>
-    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <title>Petfinder!</title>
+    <script type="text/javascript" src="../vendor/angular.min.js"></script>
+    <script type="text/javascript" src="../vendor/angular-route.min.js"></script>
+    <script type="text/javascript" src="../scripts/client.js"></script>
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/styles.css">
   </head>
-  <body ng-app="app" ng-controller="firstController as fc">
+  <body ng-app="myApp">
     <header class="jumbotron">
+
       <h1 class="container">{{fc.message}} Angular Node Express Starter</h1>
+
     </header>
-    <div class="container">
-      <div class="">
-        {{fc.animal.contact.phone.$t}}
-      </div>
-      <img ng-src="{{fc.animal.media.photos.photo[2].$t}}" />
-    </div>
+
+    <div ng-include="'/views/templates/nav.html'"></div>
+
+    <main ng-view></main>
+
   </body>
 </html>
